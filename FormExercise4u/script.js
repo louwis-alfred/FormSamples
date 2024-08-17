@@ -12,10 +12,11 @@ form.addEventListener('submit', (element) => {
 
     if (!Product_Name.value && !Product_QTY.value) return; // To check if inputs are empty
 
-    const newLI = document.getElementById('list'); // Calls the list from HTML Element
-    newLI.textContent = `${Product_QTY.value} ${Product_Name.value}`; // Format the values
-    list.appendChild(newLI)
+    const newLI = document.getElementById('list'); // Gets a reference to a list element
+    newLI.textContent = `${Product_QTY.value} ${Product_Name.value}`; // Sets the text content of the list item
+    list.appendChild(newLI) // Append the new list item to the list
 
+    // 
     Product_Name.value = ''
     Product_QTY.value = ''
     
