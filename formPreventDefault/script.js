@@ -1,4 +1,4 @@
 const form = document.querySelector('#serverForm');
 form.addEventListener('click', (d) => {
-    d.preventDefault(); // This method will prevent the submission form behavior
+    d.preventDefault(); // The "preventDefault" will prevent the submission form behavior
 });
