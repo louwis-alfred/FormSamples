@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Grocery List</title>
+    <!--LEAVE THESE LINES ALONE, PLEASE! THEY MAKE THE LIVE PREVIEW WORK!-->
+    <script src="node_modules/babel-polyfill/dist/polyfill.js" type="text/javascript"> </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+
+<body>
+    <h1>Grocery List</h1>
+    <form action="/nowhere">
+        <label for="product">Enter A Product</label>
+        <input type="text" id="product" name="product">
+        <label for="qty">Enter A Quantity</label>
+        <input type="number" id="qty" name="qty">
+        <button>Submit</button>
+    </form>
+
+    <ul id="list"></ul>
+    
+    
+    
+    <!--LEAVE THE BELOW CODE ALONE TOO, PLEASE! ALSO, NO NEED TO STUDY THE BELOW CODE, IT'S JUST AN INNER MECHANISM TO MAKE THIS CODING EXERCISE WORK FULLY!-->
+    <script>(function(arr){arr.forEach(function(item){if(item.hasOwnProperty('append'))return;Object.defineProperty(item,'append',{configurable:true,enumerable:true,writable:true,value:function append(){var argArr=Array.prototype.slice.call(arguments),docFrag=document.createDocumentFragment();argArr.forEach(function(argItem){var isNode=argItem instanceof Node;docFrag.appendChild(isNode?argItem:document.createTextNode(String(argItem)));});this.appendChild(docFrag);}});});})([Element.prototype,Document.prototype,DocumentFragment.prototype]);</script>    
+    <script src="script.js"></script>
+</body>
+
+</html>
