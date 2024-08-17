@@ -16,7 +16,7 @@ form.addEventListener('submit', (element) => {
     newLI.textContent = `${Product_QTY.value} ${Product_Name.value}`; // Sets the text content of the list item
     list.appendChild(newLI) // Append the new list item to the list
 
-    // 
+    // Reset the inputs after user inputted
     Product_Name.value = ''
     Product_QTY.value = ''
     
